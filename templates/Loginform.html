@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body style="background-image: url(/static/covi.jpg);">
+    <section class="vh-100 gradient-custom" style="margin:10px;">
+        <Form class="container" method="POST" action="/adlogin">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg- col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 2rem;">
+                <div class="card-body p-1 text-center" style="margin:10px;">
+      
+                  <div class="mb-md-4 mt-md-3 pb-4">
+      
+                    <h3 class="fw-bold mb-3 text-uppercase">Admin Login</h3>
+                    <p class="text-white-50 mb-4">Please enter your login and password!</p>
+                    <br>
+      
+                    <div class="form-outline form-white mb-1" style="margin:15px;">
+                      <input type="text" name="username" class="form-control" placeholder="Username"/>
+                      <label class="form-label" for="username"></label>
+                    </div>
+      
+                    <div class="form-outline form-white mb-1" style="margin:15px;">
+                      <input type="text" name="password" class="form-control" placeholder="Password"/>
+                      <label class="form-label" for="password"></label>
+                    </div>
+                    <br>
+                    <button class="btn btn-outline-light " type="submit">Login</button>
+                    <br>
+                    <br>
+                    <a href="/" class="btn btn-dark" style="font-size:10px;">Back To Main page</a>
+                    
+
+                    <h6 class="text-success mt-3">{{message}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </Form>
+      </section>
+</body>
+</html>
